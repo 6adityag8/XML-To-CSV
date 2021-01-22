@@ -23,7 +23,7 @@ AWS_SECRET_KEY = os.environ.get("AWS_SECRET_KEY")
 
 S3_BUCKET_NAME = os.environ.get("S3_BUCKET_NAME")
 
-logging.basicConfig(filename='logfile.log', level=logging.DEBUG,
+logging.basicConfig(filename='logfile.log', level=logging.WARNING,
                     format='%(asctime)s %(levelname)s %(name)s %(message)s')
 logger = logging.getLogger(__name__)
 
